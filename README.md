@@ -1,15 +1,26 @@
+
+
 # Notes on Gin
 - I think the listener and routing should occur on main.go
-- How can we multithread the listener?
 - the REST methods should be located in a separate file
-- How do we access a database next?
+- compiling the module to become a daemon.
+
 
 # Notes on Packages
 - a package is the same as a module in JS
 - Go will automatically export methods from a package (so long as the method is capitalized)
 - when running `go mod init <package_name>`, do not include a root directory unless publishing. The package name should be the root directory name.
 
+# Notes on dotenv
+- use this package "github.com/joho/godotenv"
+- go has built in support for environment variables, but not for dotenv. Hence the package.
+- create a helper function which reads env var and returns a string.
 
+# RFIs
+- How do I use headers?
+- How do I use cookies?
+- How do we access a database next?
+- How can we multithread the listener?
 
 # Genaric Notes
 Functions do not need to declare void.

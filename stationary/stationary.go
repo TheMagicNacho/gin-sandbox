@@ -1,4 +1,4 @@
-package controler
+package stationary
 
 import (
 	"github.com/gin-gonic/gin"
